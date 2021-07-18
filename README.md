@@ -3,29 +3,6 @@
 <img src="https://getlogovector.com/wp-content/uploads/2021/05/eattasty-logo-vector.png" width="250px"/><br>
  <b>Food delivery baseada no EatTasty</b>
 </h4>
-<p align="center">
-   <a href="https://github.com/marcosbaima"><img alt="Made by Marcos Baima"></a>
-   <a href="https://github.com/marcosbaima/eat-tasty/blob/develop/LICENSE"><img alt="License" src="https://img.shields.io/github/license/marcosbaima/eat-tasty?style=flat-square"></a>
-   <a href="https://github.com/marcosbaima/eat-tast"><img alt="Stars" src="https://img.shields.io/github/stars/marcosbaima/eat-tasty?style=social">
-</p></a> <br>
-
-### Screenshots  📷
-
-*Restaurant manager*
-<p float="left">
- <img src="/screenshots/signup-page.png" align="middle" width="380px"/>
- <img src="/screenshots/menu-manager-page.png" align="middle" width="380px"/>
-</p>
-
-*Customer*
-
-<p float="left">
- <img src="/screenshots/home-customer-page.png" align="middle" width="380px"/>
- <img src="/screenshots/restaurant-customer-page.png" align="middle" width="380px"/>
-</p>
-
-
-
 
 ### :rocket: Tecnologias usadas
 Este projeto está sendo desenvolvido com as seguintes tecnologias:

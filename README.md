@@ -4,7 +4,7 @@
  <b>Food delivery baseada no EatTasty</b>
 </h4>
 <p align="center">
-   <a href="https://github.com/marcosbaima"><img alt="Made by Marcos Baima" src="https://img.shields.io/badge/made%20by-joao-red"></a>
+   <a href="https://github.com/marcosbaima"><img alt="Made by Marcos Baima"></a>
    <a href="https://github.com/marcosbaima/eat-tasty/blob/develop/LICENSE"><img alt="License" src="https://img.shields.io/github/license/marcosbaima/eat-tasty?style=flat-square"></a>
    <a href="https://github.com/marcosbaima/eat-tast"><img alt="Stars" src="https://img.shields.io/github/stars/marcosbaima/eat-tasty?style=social">
 </p></a> <br>

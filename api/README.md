@@ -1,6 +1,6 @@
 
 <h4 align="center">
-<img src="https://wearesocial-net.s3.amazonaws.com/us/wp-content/uploads/sites/7/2019/05/WAS_NYC_WEB_LOGOSUber-Eats.png" width="250px"/><br>
+<img src="https://images.app.goo.gl/obAiAd1XCmbriUPM8" width="250px"/><br>
  <b>Food delivery EatTasty</b>
 </h4>
 <p align="center">

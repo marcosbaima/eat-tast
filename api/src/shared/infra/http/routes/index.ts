@@ -2,9 +2,8 @@ import { Router } from 'express';
 import multer from 'multer';
 import multerConfig from '../../../../config/multer';
 
-import usersRouter from '@modules/users/infra/http/routes/users.route';
+//import usersRouter from '@modules/users/infra/http/routes/users.route';
 import sessionsRouter from '@modules/users/infra/http/routes/sessions.routers';
-import passwordRouter from '@modules/users/infra/http/routes/password.routers';
 import profileRouter from '@modules/users/infra/http/routes/profile.routers';
 import groupRouter from '@modules/groups/infra/http/routes/group.router';
 
@@ -28,19 +27,17 @@ const routes = Router();
 const upload = multer(multerConfig)
 
 
-routes.use('/users', usersRouter);
-routes.use('/avatar', usersRouter);
+//routes.use('/users', usersRouter);
+//routes.use('/avatar', usersRouter);
 routes.use('/login', sessionsRouter);
 /*         ('/update/{UserID}') */
-routes.use('/user/update', usersRouter);
-
-routes.use('/password', passwordRouter);
+//routes.use('/user/update', usersRouter);
 
 routes.use('/adm/group', groupRouter);
 
 routes.use('/adm/group/list', groupRouter);
 
-routes.use('/adm/list/user', usersRouter);
+//routes.use('/adm/list/user', usersRouter);
 
 routes.use('/profile/update', profileRouter);
 

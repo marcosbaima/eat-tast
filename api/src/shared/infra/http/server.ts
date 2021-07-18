@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+
 import 'dotenv/config';
 import express, { Request, Response, NextFunction } from 'express';
 import { errors } from 'celebrate';
@@ -6,7 +8,7 @@ import 'express-async-errors';
 import routes from './routes';
 import AppError from '../../errors/AppError';
 
-import 'database';
+import '@shared/typeorm';
 import '@shared/container';
 
 

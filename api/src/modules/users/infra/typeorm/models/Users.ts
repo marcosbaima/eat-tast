@@ -8,10 +8,6 @@ import {
   ManyToOne,
 } from 'typeorm';
 import Group from '@modules/groups/infra/typeorm/models/Group';
-import SellerOwner100Pay from '@modules/owners/infra/typeorm/models/SellerOwner100Pay';
-import SellerOwnerBranch from '@modules/branchs/infra/typeorm/models/SellerOwnerBranch';
-
-//import { Exclude, Expose } from 'class-transformer';
 
 @Entity('users')
 class User {
@@ -50,30 +46,7 @@ class User {
 
   @Column('uuid')
   groupsId: string;
-  //
 
-  // foreing key - user to sellerowner100pay
-  @ManyToOne((type) => SellerOwner100Pay, (Users) => User, { eager: true })
-  @JoinTable()
-  owners: SellerOwner100Pay;
-
-  @Column('uuid')
-  ownersId: string;
-  //
-
-  @ManyToOne((type) => SellerOwnerBranch, (Users) => Users, { eager: true })
-  @JoinTable()
-  branchs: SellerOwnerBranch;
-
-  @Column('uuid')
-  branchsId: string;
-
-  /*@Expose({name:'avatar_url'})
-  getAvatarUrl():string | null {
-    return this.avatar
-      ? `${process.env.APP_API_URL}/files/${this.avatar}`
-      : null;
-  }*/
 }
 
 export default User;

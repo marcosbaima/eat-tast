@@ -1,6 +1,6 @@
 
 <h4 align="center">
-<img src="https://images.app.goo.gl/obAiAd1XCmbriUPM8" width="250px"/><br>
+<img src="https://getlogovector.com/wp-content/uploads/2021/05/eattasty-logo-vector.png" width="250px"/><br>
  <b>Food delivery baseada no UberEats</b>
 </h4>
 <p align="center">

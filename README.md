@@ -34,9 +34,6 @@ A ideia principal é criar uma aplicação baseada nas principais funcionalidade
 	- Realizar o pagamento de um pedido
 	- Resposta do restaurante (real time)
 
-### 🎯 Objetivo
-O objetivo deste projeto, é aprender coisas que serão utilizadas em um ambiente real de trabalho. me desafiei a criar este projeto para enxergar o meu nivel de conhecimento e colocar como projeto no meu portfolio.
-
 
 ### 🔥 Como rodar esse projeto (How to run this project)
 ***To run API***

@@ -13,7 +13,6 @@ Este projeto está sendo desenvolvido com as seguintes tecnologias:
 -  [Formik](https://github.com/jaredpalmer/formik)
 - [Yup](https://github.com/jquense/yup)
 - [React](https://github.com/facebook/react)
-- [React Native](https://github.com/facebook/react-native)
 - [Styled Components](https://styled-components.com/)
 
 ### :muscle: O Projeto 

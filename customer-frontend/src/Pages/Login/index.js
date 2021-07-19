@@ -5,7 +5,7 @@ import { Formik } from 'formik';
 import { Container, FormContainer, Footer, Input, SubmitButton} from './styles';
 import { SecondaryLink, ErrorText } from '../../GlobalStyles';
 
-import Logo from '../../assets/ue_logo_horizontal.png';
+import Logo from '../../assets/logo_horizontal.jpg';
 
 import api from '../../services/api';
 import { Login } from '../../utils/auth';
@@ -89,11 +89,11 @@ export default function Signup({ history }) {
       </FormContainer>
 
       <Footer>
-        <span>© 2020 by <a target="_blank" rel="noopener noreferrer" href="https://github.com/joaovitorzv">João vitor oliveira</a></span>
+        <span>© 2020 by <a target="_blank" rel="noopener noreferrer" href="https://github.com/marcosbaima">Marcos Bima</a></span>
 
         <span>
-            <a href="/login">This site has no official relationship with uber, and was made for study purposes only </a> |  
-            <a target="_blank" rel="noopener noreferrer" href="https://www.ubereats.com/restaurant/en-BR/signup"> Uber oficial site</a>
+            <a href="/login">This site has no official relationship with eat, and was made for study purposes only </a> |  
+            
         </span>
       </Footer>
     </Container>

@@ -47,7 +47,7 @@ export default function Orders() {
         <div className="customer-info">
           <div className="modify-profile">
             <h3>To modify your profile, please visit:</h3>
-            <a href="https://partners.uber.com" target="_blank" rel="noopener noreferrer">https://partners.uber.com</a>
+            
           </div>
 
           <div className="info-container">

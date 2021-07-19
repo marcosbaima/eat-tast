@@ -6,7 +6,7 @@ import { Formik } from 'formik';
 import { Container, FormContainer, Footer, Input, SubmitButton} from './styles';
 import { SecondaryLink, ErrorText } from '../../GlobalStyles';
 
-import Logo from '../../assets/ue_logo_horizontal.png';
+import Logo from '../../assets/logo_horizontal.jpg';
 
 import api from '../../services/api';
 //import { Login } from '../../utils/auth';

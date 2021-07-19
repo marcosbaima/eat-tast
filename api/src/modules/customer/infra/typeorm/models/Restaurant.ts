@@ -15,7 +15,7 @@ class restaurant {
   active: boolean;
 
   @Column()
-  name: number;
+  name: string;
   
   @Column()
   password: string;
@@ -24,7 +24,7 @@ class restaurant {
   password_hash:string;
 
   @Column()
-  restaurant_name:number;
+  restaurant_name:string;
 
   @Column()
   restaurant_address:string;

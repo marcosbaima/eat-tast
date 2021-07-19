@@ -18,11 +18,18 @@ import GroupRepository from '@modules/groups/infra/typeorm/repositories/Group';
 import IOrderRepository from '@modules/customer/Repositories/IOrderRepository';
 import OrderRepository from '@modules/customer/infra/typeorm/repositories/OrderRepository';
 
+import IRestaurantRepository from '@modules/customer/Repositories/IRestaurantRepository';
+import RestaurantRepository from '@modules/customer/infra/typeorm/repositories/RestaurantRepository';
+
 import '@modules/users/providers';
 import './providers';
 
 container.registerSingleton<IOrderRepository>(
   'OrderRepository',OrderRepository,
+);
+
+container.registerSingleton<IRestaurantRepository>(
+  'RestaurantRepository',RestaurantRepository,
 );
 
 container.registerSingleton<IUsersRepository>(

@@ -57,6 +57,12 @@ $ yarn install
 $ yarn start
 ```
 
+***To run Test***
+```sh
+$ yarn test
+
+```
+
 ### :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.

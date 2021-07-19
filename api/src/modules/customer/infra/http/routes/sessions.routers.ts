@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import SessionController from '@modules/users/infra/http/controllers/SessionController'
+import SessionController from '@modules/customer/infra/http/controller/SessionController'
 // Rota: Receberuma requisição, chamar outro arquivo, devolver uma resposta
 // SoC:
 

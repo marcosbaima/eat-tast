@@ -3,12 +3,12 @@ import multer from 'multer';
 import multerConfig from '../../../../config/multer';
 
 import usersRouter from '@modules/users/infra/http/routes/users.route';
-import sessionsRouter from '@modules/users/infra/http/routes/sessions.routers';
+
 import profileRouter from '@modules/users/infra/http/routes/profile.routers';
 import groupRouter from '@modules/groups/infra/http/routes/group.router';
 
-//import signupController  from '../../../../app/controllers/customer/signupController';
-//import sessionController from '../../../../app/controllers/customer/sessionController';
+import signupController  from '@modules/customer/infra/http/routes/singnup.route';
+import sessionController from '@modules/customer/infra/http/routes/sessions.routers';
 import restaurantsController  from '@modules/customer/infra/http/routes/restaurant.route';
 
 import menuController from '@modules/customer/infra/http/routes/menu.route';
@@ -31,7 +31,7 @@ const upload = multer(multerConfig)
 
 routes.use('/users', usersRouter);
 //routes.use('/avatar', usersRouter);
-routes.use('/login', sessionsRouter);
+
 /*         ('/update/{UserID}') */
 routes.use('/user/update', usersRouter);
 
@@ -50,8 +50,8 @@ routes.use('/profile/list', profileRouter);
 */
 
 // Manager
-//routes.post('/signup', signupController.store);
-//routes.post('/session', sessionController.store);
+routes.use('/signup', signupController);
+routes.use('/session', sessionController);
 
 routes.use('/restaurants', restaurantsController);
 routes.use('/restaurants/:id/menu', menuController);

@@ -13,7 +13,6 @@ Este projeto está sendo desenvolvido com as seguintes tecnologias:
 -  [Formik](https://github.com/jaredpalmer/formik)
 - [Yup](https://github.com/jquense/yup)
 - [React](https://github.com/facebook/react)
-- [React Native](https://github.com/facebook/react-native)
 - [Styled Components](https://styled-components.com/)
 
 ### :muscle: O Projeto 
@@ -58,8 +57,14 @@ $ yarn install
 $ yarn start
 ```
 
+***To run Test***
+```sh
+$ yarn test
+
+```
+
 ### :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-<p align="center">Feito com ❤️ por <strong>Marcos Baima 👋</p>
+<p align="center">Feito com ❤️ por <strong>Marcos Baima👋</p>

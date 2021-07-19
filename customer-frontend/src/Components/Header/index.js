@@ -27,7 +27,7 @@ import {
 
 import { AiTwotoneTag } from 'react-icons/ai';
 
-import HorizontalBrand from '../../assets/ue_logo_horizontal.png';
+import HorizontalBrand from '../../assets/logo_horizontal.jpg';
 
 import { isAuthenticated, SignOut } from '../../utils/auth';
 

@@ -15,9 +15,15 @@ import UserTokensRepository from '@modules/users/infra/typeorm/repositories/User
 import ICreateGroupRepository from '@modules/groups/repositories/groups';
 import GroupRepository from '@modules/groups/infra/typeorm/repositories/Group';
 
+import IOrderRepository from '@modules/customer/Repositories/IOrderRepository';
+import OrderRepository from '@modules/customer/infra/typeorm/repositories/OrderRepository';
+
 import '@modules/users/providers';
 import './providers';
 
+container.registerSingleton<IOrderRepository>(
+  'OrderRepository',OrderRepository,
+);
 
 container.registerSingleton<IUsersRepository>(
   'UsersRepository',UsersRepository,

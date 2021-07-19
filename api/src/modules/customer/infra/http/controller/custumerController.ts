@@ -1,12 +1,11 @@
 import { Router,Request, Response} from 'express';
-import { getRepository } from 'typeorm';
 
 import CreateCustomerService from '@modules/customer/service/CreateCustomerService';
 
 import {container} from 'tsyringe';
 
 
-export default class apiOwnerController{
+export default class customerController{
     public async create(request:Request, response:Response):Promise<Response> {
     
         try{ 
@@ -30,6 +29,6 @@ export default class apiOwnerController{
             } catch (err) {
                 return response.status(400).json({error:err.message});
             }
-    }    
+    } 
 }
   

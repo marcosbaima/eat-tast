@@ -4,7 +4,5 @@ export default interface IUpdateUserDTO{
   name: string;
   email: string;
   groupsId: string;
-  //ownersId: string;
- // branchsId: string;
   powerUser:boolean;
 }

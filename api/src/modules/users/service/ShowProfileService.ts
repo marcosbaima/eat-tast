@@ -21,7 +21,7 @@ class ShowProfileService {
     if (!user) {
       throw new AppError('User not found');
     }
-
+    //@ts-ignore
     delete user.password
 
     return user;

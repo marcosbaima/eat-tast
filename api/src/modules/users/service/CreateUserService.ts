@@ -10,8 +10,6 @@ interface Request {
   email: string;
   password: string;
   groupsId: string;
-  ownersId: string;
-  branchsId: string;
   powerUser:boolean;
 }
 @injectable()
@@ -29,8 +27,6 @@ class CreateUserService {
     email,
     password,
     groupsId,
-    ownersId,
-    branchsId,
     powerUser,
   }: Request): Promise<User> {
 
@@ -48,8 +44,6 @@ class CreateUserService {
       email,
       password: hashedPassword,
       groupsId,
-      ownersId,
-      branchsId,
       powerUser
     });
 

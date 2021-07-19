@@ -40,8 +40,6 @@ class UpdateProfile {
     user.name= name;
     user.email= email;
     user.groupsId=groupsId;
-    //user.ownersId = ownersId;
-    //user.branchsId = branchsId;
     user.powerUser= powerUser;
 
     if (password && !old_password){

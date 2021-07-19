@@ -17,6 +17,7 @@ class CustomerRepository implements ICustomerRepository{
         return findSubs;
     }
 
+
     public async findByEmail(email:string): Promise<customers | undefined>{
         const findSubs=await this.ormRepository.findOne({
             where:{email}
@@ -50,6 +51,15 @@ class CustomerRepository implements ICustomerRepository{
                 await this.ormRepository.save(subs);
 
                 return subs;
+        }
+        public async delete(id:string): Promise<any>{
+
+            const find = await this.ormRepository.findOne({
+                where:{id}
+            });
+            //@ts-ignore>
+            const findSubs=await this.ormRepository.delete(find)
+           // return 0;
         }
         public async save(subs:customers):Promise<customers>{
             await this.ormRepository.save(subs)

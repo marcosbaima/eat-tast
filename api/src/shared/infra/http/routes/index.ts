@@ -9,14 +9,14 @@ import groupRouter from '@modules/groups/infra/http/routes/group.router';
 
 //import signupController  from '../../../../app/controllers/customer/signupController';
 //import sessionController from '../../../../app/controllers/customer/sessionController';
-//import restaurantsController  from '../../../../app/controllers/customer/restaurantsController';
+import restaurantsController  from '@modules/customer/infra/http/routes/restaurant.route';
 
 import menuController from '@modules/customer/infra/http/routes/menu.route';
 import orderController from '@modules/customer/infra/http/routes/orders.route';
 import customerController from '@modules/customer/infra/http/routes/customer.route';
 import customerRestaurantController from '@modules/customer/infra/http/routes/ordersInformations.route';
 
-//import restaurantController from '../../../../app/controllers/manager/restaurantController';
+//import restaurantController from '@modules/customer/infra/http/routes/restaurant.route';
 //import itemController from '../../../../app/controllers/manager/itemController';
 //import dashboardController from '../../../../app/controllers/manager/dashboardController';
 
@@ -53,7 +53,7 @@ routes.use('/profile/list', profileRouter);
 //routes.post('/signup', signupController.store);
 //routes.post('/session', sessionController.store);
 
-//routes.get('/restaurants', restaurantsController.index);
+routes.use('/restaurants', restaurantsController);
 routes.use('/restaurants/:id/menu', menuController);
 
 //routes.use(authMiddleware);

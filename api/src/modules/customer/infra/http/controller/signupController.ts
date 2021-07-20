@@ -18,7 +18,7 @@ export default class singnupController{
 
       const customer= container.resolve(Customer)
 
-      const createCustumer = customer.execute({
+      const createCustumer = await customer.execute({
         email,
         name,
         password_hash:password,
@@ -26,7 +26,7 @@ export default class singnupController{
         district
       })
 
-      return response.status(200).json(createCustumer)
+      return response.json(createCustumer)
 
     }catch(err){
       return response.status(400).json({error:err.message});

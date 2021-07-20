@@ -37,7 +37,7 @@ class CreateCustomerService{
             }
 
             const hashedPassword = await this.hashProvider.generateHash(password_hash);
-            console.log(hashedPassword)
+           
             const Createcustomer = this.customerRepository.create({
                 name,             
                 email,

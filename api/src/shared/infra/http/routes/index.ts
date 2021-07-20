@@ -1,6 +1,4 @@
 import { Router } from 'express';
-import multer from 'multer';
-import multerConfig from '../../../../config/multer';
 
 import usersRouter from '@modules/users/infra/http/routes/users.route';
 
@@ -24,9 +22,6 @@ import customerRestaurantController from '@modules/customer/infra/http/routes/or
 //import authMiddleware from '../../../../app/middlewares/auth';
 
 const routes = Router();
-
-
-const upload = multer(multerConfig)
 
 
 routes.use('/users', usersRouter);

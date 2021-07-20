@@ -43,8 +43,8 @@ class CreateRestaurantService{
             const check = await this.restaurantRepository.findByEmail(
                 email,  
             );
-            if (!check) {
-                throw new AppError('Custome does not Exist');
+            if (check) {
+                throw new AppError('Restaurant Exists');
             }
 
             const hashedPassword = await this.hashProvider.generateHash(password_hash);

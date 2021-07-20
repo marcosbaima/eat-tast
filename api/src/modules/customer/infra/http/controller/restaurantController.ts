@@ -31,7 +31,7 @@ export default class restaurantController{
             
             const restaurant= container.resolve(Restaurant)
 
-            const createRestaurant = restaurant.execute({
+            const createRestaurant = await restaurant.execute({
                 name,
                 email,
                 password_hash:password,

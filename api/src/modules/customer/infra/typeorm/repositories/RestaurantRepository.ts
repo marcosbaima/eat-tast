@@ -31,6 +31,7 @@ class RestaurantRepository implements IRestaurantRepository{
     }
     public async create({
         name,
+        email,
         password_hash,
         description,
         restaurant_name,
@@ -43,6 +44,7 @@ class RestaurantRepository implements IRestaurantRepository{
 }:IRestaurantDTO):Promise<Restaurant | any>{
             const subs=this.ormRepository.create({
                 name,
+                email,
                 password_hash,
                 description,
                 restaurant_name,

@@ -12,8 +12,9 @@ RestaurantRouter.get('/',RestaurantController.show);
 RestaurantRouter.post('/',celebrate({
     [Segments.BODY]: Joi.object().keys({
         name:Joi.string().required(),
-        email:Joi.string().required(),
-        password:Joi.string().allow(null),
+        email:Joi.string().email().required(),
+        password:Joi.string().required(),
+        description:Joi.string().required(),
         restaurant_name:Joi.string().required(),
         restaurant_address:Joi.string().required(),
         restaurant_city:Joi.string().required(),

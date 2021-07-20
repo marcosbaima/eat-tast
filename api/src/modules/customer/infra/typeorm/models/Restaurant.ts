@@ -16,10 +16,10 @@ class restaurant {
 
   @Column()
   name: string;
-  
-  @Column()
-  password: string;
 
+  @Column()
+  email: string;
+  
   @Column()
   password_hash:string;
 

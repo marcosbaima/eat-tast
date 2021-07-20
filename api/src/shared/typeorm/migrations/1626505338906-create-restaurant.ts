@@ -12,6 +12,7 @@ export default class createRestaurant1626505338906 implements MigrationInterface
                     type: 'uuid',
                     isPrimary: true,
                     generationStrategy: 'uuid',
+                    default: 'uuid_generate_v4()',
                     
                 },
             

@@ -5,7 +5,7 @@ import ensureAuthenticaated from '@modules/users/infra/http/middlewares/ensureAu
 import singnupController from '../controller/signupController';
 
 const singnupRouter = Router();
-singnupRouter.use(ensureAuthenticaated);
+//singnupRouter.use(ensureAuthenticaated);
 
 const SingnupController = new singnupController()
 

@@ -12,6 +12,7 @@ export default class createOrdersItem1626510534333 implements MigrationInterface
                     type: 'uuid',
                     isPrimary: true,
                     generationStrategy: 'uuid',
+                    default: 'uuid_generate_v4()',
                   
                 },
                 {

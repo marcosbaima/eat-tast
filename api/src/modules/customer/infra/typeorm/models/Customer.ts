@@ -5,7 +5,7 @@ import {
   } from 'typeorm';
 
   
-  @Entity('Customers')
+  @Entity('customers')
   class Customers {
     @PrimaryGeneratedColumn('uuid')
     id: string;
@@ -16,14 +16,9 @@ import {
     @Column()
     email:string;
   
-  
-    @Column()
-    password: string;
-
-  
+    
     @Column()
     password_hash: string;
-
 
   
     @Column()

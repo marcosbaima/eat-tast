@@ -7,7 +7,7 @@ import IHashProvider from '@modules/users/providers/HashProvider/models/IHashPro
 interface Request {
     name:string;             
     email:string;
-    password:string;
+    password_hash:any;
     address:string;
     district:string;
 }
@@ -24,23 +24,24 @@ class CreateCustomerService{
         public async execute({
             name,             
             email,
-            password,
+            password_hash,
             address,
             district,
         }:Request): Promise<customer>{
             const check = await this.customerRepository.findByEmail(
                 email,  
             );
-            if (!check) {
-                throw new AppError('Custome does not Exist');
+            
+            if (check) {
+                throw new AppError('Customer Exists');
             }
 
-            const hashedPassword = await this.hashProvider.generateHash(password);
-
+            const hashedPassword = await this.hashProvider.generateHash(password_hash);
+            console.log(hashedPassword)
             const Createcustomer = this.customerRepository.create({
                 name,             
                 email,
-                password:hashedPassword,
+                password_hash:hashedPassword,
                 address,
                 district,
             });

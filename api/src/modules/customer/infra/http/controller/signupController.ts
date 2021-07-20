@@ -14,12 +14,14 @@ export default class singnupController{
         district 
       } = request.body
 
+      console.log(email)
+
       const customer= container.resolve(Customer)
 
       const createCustumer = customer.execute({
         email,
         name,
-        password,
+        password_hash:password,
         address,
         district
       })

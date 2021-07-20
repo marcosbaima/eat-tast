@@ -19,6 +19,7 @@ class CustomerRepository implements ICustomerRepository{
 
 
     public async findByEmail(email:string): Promise<customers | undefined>{
+        console.log("xxxxxx");
         const findSubs=await this.ormRepository.findOne({
             where:{email}
         });
@@ -34,7 +35,7 @@ class CustomerRepository implements ICustomerRepository{
 
         name,             
         email,
-        password,
+        password_hash,
         address,
         district,
 
@@ -42,7 +43,7 @@ class CustomerRepository implements ICustomerRepository{
             const subs=this.ormRepository.create({
                 name,             
                 email,
-                password,
+                password_hash,
                 address,
                 district,
         

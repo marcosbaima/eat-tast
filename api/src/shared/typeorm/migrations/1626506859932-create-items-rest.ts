@@ -12,6 +12,7 @@ export default class createItemsRest1626506859932 implements MigrationInterface 
                     type: 'uuid',
                     isPrimary: true,
                     generationStrategy: 'uuid',
+                    default: 'uuid_generate_v4()',
                    
                 },
             

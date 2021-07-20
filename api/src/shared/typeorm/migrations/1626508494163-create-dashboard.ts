@@ -12,6 +12,7 @@ export default class createDashboard1626508494163 implements MigrationInterface 
                     type: 'uuid',
                     isPrimary: true,
                     generationStrategy: 'uuid',
+                    default: 'uuid_generate_v4()',
                     
                 },
             
